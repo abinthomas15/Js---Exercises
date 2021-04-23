@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Online Shopping Site for Mobiles, Electronics and Furnitures..</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" type="image/pg"  href="img/flipkart_logo_detail_icon.jpg">
+</head>
+
+<body>
+  <header>
+    <div class="header1">
+      <nav class="navigation1">
+        <ul class="nav">
+          <li class="nav">
+            <a href=""><img src="img/divboxkart.PNG" alt="" class="fliplogo"></a>
+          </li>
+          <li class="nav">
+            <div class="input-text">
+              <input type="text" id="input-text" placeholder="Search for product, Brands and More">
+              <img src="img/search.svg" alt="">
+            </div>
+          </li>
+          <li class="nav">
+            <div class="login">
+              <a href="" id="login">Login</a>
+            </div>
+          </li>
+          <li class="nav" id="more">
+            <div class="more">
+              <button >More</button>
+            </div>
+          </li>
+          <li class="nav">
+            <div class="cart">
+              <a href=""><img src="img/shopping-icons.png" alt="" class="cart-logo"></a>
+              <a href="" class="cart-text">Cart</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header1-mobileview">
+      <div class="mobile-logo">
+        <img src="img/m1.png" alt="">
+      </div>
+      <div class="mobile-text">
+        <h4>Mi Mobiles</h4>
+      </div>
+      <div class="mobile-search">
+        <img src="img/search.svg" alt="">
+      </div>
+      <div class="mobile-cart">
+        <img src="img/shopping-icons.png" alt="">
+      </div>
+      <div class="mobile-login">
+        <p>Login</p>
+      </div>
+    </div>
+    <div class="header2">
+      <a href="">Electronics</a>
+      <a href="">Tvs and Appliances</a>
+      <a href="">Men</a>
+      <a href="">Women</a>
+      <a href="">Baby & Kids</a>
+      <a href="">Home & Furniture</a>
+      <a href="">Sport,Books & More</a>
+      <a href="">Flights</a>
+      <a href="">Offer Zone</a>
+    </div>
+    <div class="mobile-header2">
+      <div class="sort-filter">
+        <div class="sort">
+          <a href=""><img src="img/sortimage.PNG" alt=""></a>
+          <p>Sort</p>
+        </div>
+        <div class="vl"></div>
+        <div class="filter">
+          <a href=""><img src="img/filtericon.PNG" alt=""></a>
+          <p>Filter</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section1">
+      <div class="filters">
+        <h2>Filters</h2>
+        <div class="line"></div>
+        <div class="categories">
+          <h3>Categories</h3>
+          <p>Mobile & Accessories</p>
+          <p>Mobiles</p>
+        </div>
+        <div class="line"></div>
+        <div class="slidecontainer">
+          <h3>Price:</h3>
+          <input type="range" min="1" max="100" value="50">
+        </div>
+        <div class="minmax-rate">
+          <div class="min-rate">
+            <select name="mim" id="min">
+              <option value="min">Min</option>
+            </select>
+          </div>
+          <div class="to">
+            to
+          </div>
+          <div class="max-rate">
+            <select name="max" id="max">
+              <option value="max">₹2000</option>
+              <option value="max">₹5000</option>
+              <option value="max">₹10000</option>
+            </select>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="f-assurance">
+          <form>
+            <input type="checkbox" id="assurance" name="assurance" value="assurance">
+            <label for="assurance"></label>
+          </form>
+          <div assurance-img>
+            <img src="img/assured.png" alt="">
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="RAM">
+          <h4>RAM</h4>
+          <div class="gb">
+            <form>
+              <input type="checkbox" id="6gb" name="6gb" value="6gb">
+              <label for="6gb">6GB</label>
+              <br>
+              <input type="checkbox" id="5gb" name="5GB">
+              <label for="5gb">5GB</label>
+              <br>
+              <input type="checkbox" id="4gb" name="3gb" value="4GB">
+              <label for="4gb">4GB</label>
+              <br>
+              <input type="checkbox" id="3gb" name="2gb" value="3GB">
+              <label for="3gb">3GB</label>
+              <br>
+              <input type="checkbox" id="2gb" name="1gb" value="2GB">
+              <label for="2gb">2GB</label>
+            </form>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="brand-redmi">
+          <h4>BRAND</h4>
+          <form>
+            <input type="checkbox" id="mi" name="mi" value="mi">
+            <label for="mi">Mi</label>
+          </form>
+        </div>
+        <div class="line"></div>
+        <div class="customer-rating">
+          <h4>CUSTOMER RATINGS</h4>
+          <form>
+            <input type="checkbox" id="rating" name="rating" value="rating">
+            <label for="rating"> 4* & above</label>
+            <br>
+            <input type="checkbox" id="rating" name="rating" value="rating">
+            <label for="rating"> 3* & above</label>
+            <br>
+            <input type="checkbox" id="rating" name="rating" value="rating">
+            <label for="rating"> 2* & above</label>
+            <br>
+            <input type="checkbox" id="rating" name="rating" value="rating">
+            <label for="rating"> 1* & above</label>
+          </form>
+        </div>
+        <div class="line"></div>
+        <div class="internal-storage">
+          <h4>INTERNAL STORAGE</h4>
+          <form>
+            <input type="checkbox" id="storage" name="storage" value="storage">
+            <label for="storage">256 GB and above</label>
+            <br>
+            <input type="checkbox" id="storage" name="storage" value="storage">
+            <label for="storage">128-255.9GB</label>
+            <br>
+            <input type="checkbox" id="storage" name="storage" value="storage">
+            <label for="storage">64-127.9GB</label>
+            <br>
+            <input type="checkbox" id="storage" name="storage" value="storage">
+            <label for="storage">32-63.9GB</label>
+            <br>
+            <input type="checkbox" id="storage" name="storage" value="storage">
+            <label for="storage">16-31.9GB</label>
+            <br>
+          </form>
+        </div>
+        <div class="line"></div>
+        <div class="battery">
+          <h4>BATTERY CAPACITY</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>OPERATING SYSTEM</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>NETWORK TYPE</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>SCREEN SIZE</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>PRIMARY CAMERA</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>SECONDARY CAMERA</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>SIM TYPE</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>CLOCK SPEED</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>PROCESSOR BRAND</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>NUMBER OF CORES</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>SPECIALITY</h4>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>AVAILABILITY </h4>
+        </div>
+        <div class="line"></div>
+        <div class="discount">
+          <h4>OFFERS</h4>
+          <form>
+            <input type="checkbox" id="offers" name="offers" value="offers">
+            <label for="offers">Bank Offer</label>
+            <br>
+            <input type="checkbox" id="offers" name="offers" value="offers">
+            <label for="offers">Exchange Offer</label>
+            <br>
+            <input type="checkbox" id="offers" name="offers" value="offers">
+            <label for="offers">No cost EMI</label>
+            <br>
+            <input type="checkbox" id="offers" name="offers" value="offers">
+            <label for="offers">Special price</label>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="home">
+        <p>
+          <a href="">Home</a>
+        </p>
+        <img src="img/next.png" alt="">
+        <p>
+          <a href="">Mobile and Accessories</a>
+        </p>
+        <img src="img/next.png" alt="">
+        <p>
+          <a href="">Mobiles</a>
+        </p>
+      </div>
+      <div class="latest-redmi">
+        <p>
+          Latest From MI:
+          <a href="">Redmi Go</a>
+        </p>
+      </div>
+      <div class="mi-mobiles">
+        <h4>Mi Mobiles</h4>
+        <p>(1-24 products of 194 products)</p>
+      </div>
+      <div class="sort-by">
+        <div>
+          <p>Sort By</p>
+        </div>
+        <div>
+          <p>Popularity</p>
+        </div>
+        <div>
+          <p>Price -- Low to high</p>
+        </div>
+        <div>
+          <p>Newest First</p>
+        </div>
+      </div>
+      <div class="mobiles-container"></div>
+      
+    </section>
+  </main>
+
+  <div class="mobile-1stmobile">
+    <div class="mobile-note7">
+      <div class="mobile-note7-image">
+        <img src="img/note8.jpeg" alt="">
+      </div>
+      <div class="mobile-note8-specs">
+        <h4>Redmi Note 7 Pro (Space Black, 128 GB)</h4>
+        <p>#justhere</p>
+        <button class="button-rating">
+          <a href="">4.3★</a>
+        </button>
+        <p>22,611 Reviews</p>
+        <img src="img/assured.png" alt="">
+        <h4>13,999</h4>
+        <p>17,999 22% off <br>No Cost EMI <br>Upto ₹13,250 off on Exchange </p>
+      </div>
+    </div>
+  </div>
+  <div class="note8-ram">
+    <div class="ram">
+      <p>6 GB | 128 GB ROM</p>
+    </div>
+    <div class="display">
+      <p>16.0cm (6.3 inch) Full HD+Display </p>
+      <p>48MP + 5MP</p>
+    </div>
+    <div class="battery">
+      <p>4000 mah</p>
+      <p>13 MP Front Camera</p>
+    </div>
+  </div>
+  <div class="line-mob"></div>
+
+  <div class="mobile-1stmobile">
+    <div class="mobile-note7">
+      <div class="mobile-note7-image">
+        <img src="img/note7.jpeg" alt="">
+      </div>
+      <div class="mobile-note8-specs">
+        <h4>Redmi Note 8 (Moonlight White, 128 GB)</h4>
+        <p>#justhere</p>
+        <button class="button-rating">
+          <a href="">4.1★</a>
+        </button>
+        <p>2211 Reviews</p>
+        <img src="img/assured.png" alt="">
+        <h4>35,999</h4>
+        <p>12,229 22% off <br>No Cost EMI <br>Upto ₹13,250 off on Exchange </p>
+      </div>
+    </div>
+  </div>
+  <div class="note8-ram">
+    <div class="ram">
+      <p>6 GB | 128 GB ROM</p>
+    </div>
+    <div class="display">
+      <p>16.0cm (6.3 inch) Full HD+Display </p>
+      <p>48MP + 5MP</p>
+    </div>
+    <div class="battery">
+      <p>4000 mah</p>
+      <p>13 MP Front Camera</p>
+    </div>
+  </div>
+  <div class="line-mob"></div>
+
+  <div class="mobile-1stmobile">
+    <div class="mobile-note7">
+      <div class="mobile-note7-image">
+        <img src="img/rn8.jpeg" alt="">
+      </div>
+      <div class="mobile-note8-specs">
+        <h4>Mi A3 (More Than White, 128 GB)</h4>
+        <p>#justhere</p>
+        <button class="button-rating">
+          <a href="">4.0★</a>
+        </button>
+        <p>211 Reviews</p>
+        <img src="img/assured.png" alt="">
+        <h4>22,288</h4>
+        <p>10,229 22% off <br>No Cost EMI <br>Upto ₹22,250 off on Exchange </p>
+      </div>
+    </div>
+  </div>
+  <div class="note8-ram">
+    <div class="ram">
+      <p>6 GB | 128 GB ROM</p>
+    </div>
+    <div class="display">
+      <p>16.0cm (6.3 inch) Full HD+Display </p>
+      <p>48MP + 5MP</p>
+    </div>
+    <div class="battery">
+      <p>4000 mah</p>
+      <p>13 MP Front Camera</p>
+    </div>
+  </div>
+  <div class="line-mob"></div>
+
+  <div class="mobile-1stmobile">
+    <div class="mobile-note7">
+      <div class="mobile-note7-image">
+        <img src="img/image4.PNG" alt="">
+      </div>
+      <div class="mobile-note8-specs">
+        <h4>Redmi K20 (Flame Red, 128 GB)</h4>
+        <p>#justhere</p>
+        <button class="button-rating">
+          <a href="">4.4★</a>
+        </button>
+        <p>711 Reviews</p>
+        <img src="img/assured.png" alt="">
+        <h4>32,288</h4>
+        <p>9,229 22% off <br>No Cost EMI <br>Upto ₹12,250 off on Exchange </p>
+      </div>
+    </div>
+  </div>
+  <div class="note8-ram">
+    <div class="ram">
+      <p>6 GB | 128 GB ROM</p>
+    </div>
+    <div class="display">
+      <p>16.0cm (6.3 inch) Full HD+Display </p>
+      <p>48MP + 5MP</p>
+    </div>
+    <div class="battery">
+      <p>4000 mah</p>
+      <p>13 MP Front Camera</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer1">
+      <div class="sell-on-flipkart">
+        <img src="img/sellonflipkart.PNG" alt="">
+        <p>Sell On<br> Flipkart</p>
+      </div>
+      <div class="advertise">
+        <img src="img/advertise.PNG" alt="">
+        <p>Advertise</p>
+      </div>
+      <div class="gift">
+        <img src="img/giftcards.PNG" alt="">
+        <p>Gift Cards</p>
+      </div>
+      <div class="help">
+        <img src="img/helpcenter.PNG" alt="">
+        <p>Help Center</p>
+      </div>
+      <div class="copyright">
+        <p>© 2007-2020 Flipkart.com</p>
+      </div>
+      <div class="card-details">
+        <img src="img/card.jpeg" alt="">
+      </div>
+    </div>
+  </footer>
+  <div class="footer-mobile">
+    <div class="footer-icons"> 
+      <img src="img/sellonflipkart.PNG" alt="">
+      <img src="img/advertise.PNG" alt="">
+      <img src="img/giftcards.PNG" alt="">
+      <img src="img/helpcenter.PNG" alt="">
+      <p>© 2007-2020 Flipkart.com</p>
+    </div>
+  </div>
+  <div id="post"></div>
+  <script src="build/app.bundle.js"></script>
+</body>
+</html>
