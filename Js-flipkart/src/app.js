@@ -6,7 +6,6 @@ document.getElementById('input-text').addEventListener('keyup',inputField);
 document.getElementById('6gb').addEventListener('change',firstCheckbox);
 
 
-
 document.getElementById('5gb').addEventListener('change',firstCheckbox);
 document.getElementById('4gb').addEventListener('change',firstCheckbox);
 document.getElementById('3gb').addEventListener('change',firstCheckbox);
@@ -105,6 +104,7 @@ function inputField(e) {
 function firstCheckbox ({target}) {
   if(target.checked){
     const checkResult = postArray.filter(post => post.memory.includes(target.name.toUpperCase()));
+    console.log(checkResult);
     post = document.querySelector('.mobiles-container');
     post.innerHTML = '';
     addToUI(checkResult);
@@ -112,3 +112,4 @@ function firstCheckbox ({target}) {
     showPosts(postArray);
   }
 }
+
