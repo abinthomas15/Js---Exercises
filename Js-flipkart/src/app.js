@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', getPosts);
 // const log = document.getElementById('more');
 // log.addEventListener("click",filterArray);
 
-document.getElementById('input-text').addEventListener('keyup',inputField);
-document.getElementById('6gb').addEventListener('change',firstCheckbox);
+// document.getElementById('input-text').addEventListener('keyup',inputField);
+// document.getElementById('6gb').addEventListener('change',firstCheckbox);
 
 
-document.getElementById('5gb').addEventListener('change',firstCheckbox);
-document.getElementById('4gb').addEventListener('change',firstCheckbox);
-document.getElementById('3gb').addEventListener('change',firstCheckbox);
-document.getElementById('2gb').addEventListener('change',firstCheckbox);
+// document.getElementById('5gb').addEventListener('change',firstCheckbox);
+// document.getElementById('4gb').addEventListener('change',firstCheckbox);
+// document.getElementById('3gb').addEventListener('change',firstCheckbox);
+// document.getElementById('2gb').addEventListener('change',firstCheckbox);
 
 
 function getPosts () {
@@ -93,23 +93,63 @@ function addToUI (posts) {
   post.innerHTML = output;
 }
 
-function inputField(e) {
-  const result_array = postArray.filter(post=> post.name.toLowerCase().includes(e.target.value.toLowerCase()));
-  console.log(result_array)
-  post = document.querySelector('.mobiles-container');
-  post.innerHTML = '';
-  addToUI(result_array);
+// function inputField(e) {
+//   const result_array = postArray.filter(post=> post.name.toLowerCase().includes(e.target.value.toLowerCase()));
+//   console.log(result_array)
+//   post = document.querySelector('.mobiles-container');
+//   post.innerHTML = '';
+//   addToUI(result_array);
+// }
+
+// function firstCheckbox ({target}) {
+//   if(target.checked){
+//     const checkResult = postArray.filter(post => post.memory.includes(target.name.toUpperCase()));
+//     console.log(checkResult);
+//     post = document.querySelector('.mobiles-container');
+//     post.innerHTML = '';
+//     addToUI(checkResult);
+//   } else {
+//     showPosts(postArray);
+//   }
+// }
+
+document.getElementById('input-text').addEventListener('keyup',mainEvent);
+const checkboxes = document.querySelectorAll('.memory')
+for(let i=0; i<checkboxes.length;i++){
+document.getElementById(checkboxes[i].id).addEventListener('change', mainEvent);
 }
 
-function firstCheckbox ({target}) {
-  if(target.checked){
-    const checkResult = postArray.filter(post => post.memory.includes(target.name.toUpperCase()));
-    console.log(checkResult);
+
+function mainEvent() {
+  const input = document.getElementById('input-text').value;
+  if(input === '') {
+    for(let i=0; i<checkboxes.length;i++){
+      // console.log(checkboxes[i].value)
+      if(checkboxes[i].checked){
+        filterByCheckbox(checkboxes[i],postArray);
+      }
+    }
+
+  } else {
+    filterByinput(input);
+  }
+}
+
+function filterByCheckbox(target,itemArray) {
+    const checkResult = itemArray.filter(post => post.memory.includes(target.name.toUpperCase()));
     post = document.querySelector('.mobiles-container');
     post.innerHTML = '';
     addToUI(checkResult);
+}
+
+function filterByinput (input) {  
+  const cb = document.getElementById('6gb')
+  if(cb.checked === true) {
+    const resultArray = postArray.filter(post=> post.name.toLowerCase().includes(input.toLowerCase()));
+    filterByCheckbox(cb,resultArray);
   } else {
-    showPosts(postArray);
+    const resultArray = postArray.filter(post=> post.name.toLowerCase().includes(input.toLowerCase()));
+    addToUI(resultArray);
   }
 }
 
